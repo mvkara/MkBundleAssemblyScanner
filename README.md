@@ -29,3 +29,7 @@ An example of how to use that with the Mono mkbundle command to generate a Linux
 
 This will create a binary called ./MkBundleAssemblyScanner with the DLL's embedded from output.log. The skip-scan and nodeps are required to turn off the mkbundle assembly scanner
 and use the output.log file instead.
+
+## How to get it ##
+
+Releases are made on GitHub at: https://github.com/mvkra/MkBundleAssemblyScanner/releases
