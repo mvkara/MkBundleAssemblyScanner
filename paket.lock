@@ -1,0 +1,8 @@
+NUGET
+  remote: https://www.nuget.org/api/v2
+    Argu (3.2)
+    FAKE (4.35.1)
+    FSharp.Core (4.0.0.1)
+    FSharp.Data (2.3.2)
+      Zlib.Portable (>= 1.11) - framework: portable-net45+sl5+win8, portable-net45+win8, portable-net45+win8+wp8+wpa81
+    Zlib.Portable (1.11) - framework: portable-net45+sl5+win8, portable-net45+win8, portable-net45+win8+wp8+wpa81
