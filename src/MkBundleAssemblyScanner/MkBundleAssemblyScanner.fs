@@ -5,9 +5,6 @@ open System.Reflection
 open System
 open System.IO
 
-/// This worked - odd for both System.Core and System.Security
-//let assExample = Assembly.ReflectionOnlyLoad("System.Security")
-
 /// Union used to represent the arguments for the tool
 type CommandLineArguments = 
     | [<Mandatory; AltCommandLine("-m")>] MainExe of string
@@ -54,7 +51,6 @@ let rec getAssemblyDeps loadAssembly alreadyFetchedAssemblies (assemblyName: Ass
             yield! getAssemblyDeps loadAssembly newMap refAss
     ]
 
-open System.IO
 let getAllDependenciesForExecutable allAssemblyNames (executable: string) = [ 
     
     let providedAssemblyMap = 
